@@ -23,17 +23,17 @@ type DataPrice struct {
 }
 
 type Price struct {
-	Actual           bool   `json:"actual" bson:"actual"`
-	DepartDate       string `json:"depart_date" bson:"depart_date"`
-	Destination      string `json:"destination" bson:"destination"`
-	Distance         int    `json:"distance" bson:"distance"`
-	FoundAt          string `json:"found_at" bson:"found_at"`
-	NumberOfChanges  int    `json:"number_of_changes" bson:"number_of_changes"`
-	Origin           string `json:"origin" bson:"origin"`
-	ReturnDate       string `json:"return_date" bson:"return_date"`
-	ShowToAffiliates bool   `json:"show_to_affiliates" bson:"show_to_affiliates"`
-	TripClass        int    `json:"trip_class" bson:"trip_class"`
-	Value            int    `json:"value" bson:"value"`
+	Actual           bool    `json:"actual" bson:"actual"`
+	DepartDate       string  `json:"depart_date" bson:"depart_date"`
+	Destination      string  `json:"destination" bson:"destination"`
+	Distance         int     `json:"distance" bson:"distance"`
+	FoundAt          string  `json:"found_at" bson:"found_at"`
+	NumberOfChanges  int     `json:"number_of_changes" bson:"number_of_changes"`
+	Origin           string  `json:"origin" bson:"origin"`
+	ReturnDate       string  `json:"return_date" bson:"return_date"`
+	ShowToAffiliates bool    `json:"show_to_affiliates" bson:"show_to_affiliates"`
+	TripClass        int     `json:"trip_class" bson:"trip_class"`
+	Value            float64 `json:"value" bson:"value"`
 }
 
 // PricesLatest returns a list of the prices found aviasales users in the last 48 hours, in accordance with the exposed filters.
